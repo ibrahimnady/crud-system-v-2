@@ -1,3 +1,4 @@
+
 var productNameInput = document.getElementById("productName");
 var productCountInput = document.getElementById("productCount");
 var productPriceInput = document.getElementById("productPrice");
@@ -107,5 +108,6 @@ function editData() {
     productsContainer[currentIndex].dec = productDecInput.value
     myBtn.innerHTML = "Add Product";
     displayProducts()
-    localStorage.setItem("products", JSON.stringify(productsContainer))
+    localStorage.setItem("products", JSON.stringify(productsContainer));
+    clearform()
 }
